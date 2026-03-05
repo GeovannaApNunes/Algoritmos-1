@@ -1,0 +1,12 @@
+Não usar GOTO, não existe mais
+
+main() {
+Variáveis
+comandos
+}
+
+int main(){
+	return:0;
+
+}
+
