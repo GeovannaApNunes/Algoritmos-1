@@ -1,25 +1,21 @@
-/*1 - Uma indústria de chaveiros tem um estoque com vários caixas de pelúcias. Escreva um programa que solicite ao usuário o número total de caixas de pelúcias, e calcule e retorne a quantidade de chaveiros, sabendo que cada chaveiro leva uma pelúcia e cada caixa tem sempre 10 pelúcias.
-Entrada de dados(solicita, informa, digite)
-Processamento(calcule o retorno da quantidade de chaveiros, cada chaveiro leva uma pelucia e cada caixa tem 10 pelucias)
-Saida retorne a quantidade de chaveiro
-*/
-
 #include <stdio.h>
 
 int main(){
-	//variaveis
-	int caixa;
-	int chaveiro;
+	float nota;
 	
-	//Entrada de dados
-	printf("Caro usuario sentado, digite o numero de caixas, por favor, e em seguida tecle ENTER ");
-	scanf("%i",&caixa);
+	printf("Qual sua nota: ");
+	scanf("%f", &nota);
+
+	if(nota >= 60){
+	printf("Aprovado\n");
+	}	
 	
-	//Processamento
-	chaveiro = caixa*10;
+	if((nota >= 40) && (nota < 60)){
+	printf("Recuperacao\n");
+	}
 	
-	//saida de dados
-	printf("caixas:  %i\n", caixa);
-	printf("chaveiros:  %i", chaveiro);
-	return 0;
+	if (nota < 40){
+	printf("Reprovado\n");
+	}
+	
 }
