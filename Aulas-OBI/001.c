@@ -1,23 +1,36 @@
 #include <stdio.h>
 
 int main(){
-	float prova1;
-	float prova2;
-	float media;
+	int num1, num2;
+	char expressao; 
 	
-	printf("Digite o valor da primeira prova: ");
-	scanf("%f", &prova1);
+	printf("Digite a expressao a ser realizada (+, -, *, /): ");
+	scanf("%c", &expressao);
 	
-	printf("Digite o valor da segunda prova: ");
-	scanf("%f", &prova2);
+	printf("Digite o primeiro numero: ");
+	scanf("%i", &num1);
 	
-	media = (prova1 + prova2) / 2 ;
+	printf("Digite o segundo numero: ");
+	scanf("%i", &num2);
+
+
+	if ( expressao == '+'){
+	  int soma=num1+num2;
+		printf("A soma dos numeros e: %i ", soma);
+	}
+		
+	if ( expressao == '-'){
+	  int sub=num1-num2;
+		printf("A subtracao dos numeros e: %i", sub);
+	}
 	
-	if(media >= 7){
-		printf("Aprovado");
-	}else if(media < 7 && media >=  4){
-		printf("Recuperacao");
-	}else {
-		printf("Reprovado");
+	if ( expressao == '*'){
+	  int multi=num1*num2;
+		printf("A multiplicacao dos numeros e: %i", multi);
+	}
+	
+	if ( expressao == '/'){
+	  int div=num1/num2;
+		printf("A divisao dos numeros e: %i", div);
 	}
 }
