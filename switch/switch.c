@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-	
+	// dado simples int ou algo que vire int char
 	int mes;
 	
 	printf("Digite o mes: ");
