@@ -1,19 +1,31 @@
 #include <stdio.h>
 
 int main(){
-	float deposito, taxa, rendimento, valorTotal;
+	float peso, alt, imc;
 	
-	printf("Digite o valor do deposito: ");
-    scanf("%f", &deposito);
-
-    printf("Digite a taxa de juros (%%): ");
-    scanf("%f", &taxa);
-
-    rendimento = deposito * (taxa / 100);
-    valorTotal = deposito + rendimento;
-
-    printf("Rendimento: %.2f\n", rendimento);
-    printf("Total apos rendimento: %.2f\n", valorTotal);
-
-    return 0;
+	printf("Qual seu peso: ");
+	scanf("%f", &peso);
+	
+	printf("Qual sua altura: ");
+	scanf("%f", &alt);
+	
+	imc= peso / (alt*alt);
+	// #include <stdio.h> 
+	// pow()
+	
+	if( imc < 18.5){
+		printf("Abaixo do peso");
+	}
+	
+	else if(imc >= 18.5 && imc < 25){
+		printf("Peso Normal");
+	}
+	
+	else if(imc >= 25 && imc < 30){
+		printf("Acima do peso");
+	}
+	
+	else{
+		printf("Obeso");
+	}
 }
