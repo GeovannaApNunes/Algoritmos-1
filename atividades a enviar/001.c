@@ -5,7 +5,7 @@
 
 int main()
 {
-    int  idade, i=1, maior;
+    int idade, i=1, maior;
     
     while(i<=10){
       printf("Qual a idade da %i pessoa: ", i);
@@ -18,4 +18,6 @@ int main()
     }
     
     printf("A quantidade de pessoas maiores de idade sao %i", maior);
+    
+    return 0;
 }

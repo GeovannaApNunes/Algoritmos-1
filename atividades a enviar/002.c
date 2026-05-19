@@ -1,3 +1,8 @@
+//Escreva uma Programa que receba a idade de 15 pessoas, calcule e imprima: a quantidade de pessoas em cada faixa etária.
+//As faixas etárias são
+//1 a 15 anos - Menor de Idade
+//16 a 60 anos - Adulto
+//Acima de 61 anos, inclusive - Idoso
 
 #include <stdio.h>
 
@@ -27,4 +32,6 @@ int main()
     printf("A quantidade de pessoas menores de idade sao %i\n", menor);
     printf("A quantidade de pessoas adultas sao %i\n", maior);
     printf("A quantidade de idosos sao %i\n", idoso);
+    
+    return 0;
 }

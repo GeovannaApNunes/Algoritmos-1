@@ -1,3 +1,7 @@
+//Tem-se um conjunto de dados contendo a altura e o sexo (M ou F) de 15 pessoas. Faça um programa que calcule e escreva:
+// número de homens.
+// a média de altura das mulheres;
+
 #include <stdio.h>
 
 int main()
@@ -11,7 +15,7 @@ int main()
     float somaAlt = 0;
     float media;
 
-    while(i <= 5)
+    while(i <= 15)
     {
         printf("Qual o seu genero: M - Masculino | F - Feminino: ");
         scanf(" %c", &sexo);
