@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i=1, maior=0 , pergunta=1;
+    int i=1, maior=0 , pergunta;
     float salario, total=0;
     
     do{
