@@ -11,7 +11,7 @@ int main()
       printf("Qual a idade da %i pessoa: ", i);
       scanf("%i", &idade);  
       
-      if(idade > 18){
+      if(idade >= 18){
           maior++;
       }
       i++;
